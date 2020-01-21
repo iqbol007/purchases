@@ -1,0 +1,41 @@
+*
+{
+    outline: none;
+}
+#sum,#category
+{
+border-radius: 10px;
+border-style: groove;
+font-family: Arial, Helvetica, sans-serif;
+font-size:  large;
+width: 200px;
+height: 20px;
+}
+#add-button{
+    border-radius: 10px;
+    border-style: groove;
+    box-shadow: blue;
+    font-size:  large;
+}
+#add-button:active{
+    box-shadow: 0px  0px 20px rgb(64, 255, 16);
+} 
+#total
+{
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    margin-left: 30px;
+
+}
+#sum-list
+{
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+label
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:  large;
+}
