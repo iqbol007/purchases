@@ -23,10 +23,30 @@ addButton.addEventListener('click',(evt)=>
 {
     evt.preventDefault();    
     finalSum.textContent=`Total : ${ amaunt +=parseInt(inputSum.value)}`;   
-    
     const item =document.createElement('li');
-    item.textContent=`Sum:${inputSum.value} - Category:${inputCategory.value}`;
+    item.innerHTML = `Sum:${inputSum.value} - Category:${inputCategory.value}`;
+    const delb = document.createElement('button');
+    delb.textContent=`x`;
+    delb.addEventListener('click',()=>
+    {
+        item.remove();
+        var num = parseInt(item.innerHTML.replace(/\D+/g,""));       
+        
+         finalSum.textContent =`Total : ${amaunt-= num}`;
+        
+    });
+    item.appendChild(delb);
+    
+    delb.click=()=>
+    {
+console.log('click');
+
+    };
+   
     sumList.insertBefore(item,sumList.firstElementChild);
+    
     inputSum.value = '';     
     inputCategory.value = '';
 });
+
+ 
