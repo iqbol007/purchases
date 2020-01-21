@@ -1,5 +1,4 @@
 const root = document.querySelector('[data-id=root]');
-
 root.innerHTML=
 `
 <form>
@@ -56,6 +55,9 @@ addButton.addEventListener('click',(evt)=>
            if (upButton.parentElement!=sumList.firstElementChild) {
            sumList.insertBefore(item,sumList.childNodes[indexer].previousElementSibling );           
                 }
+                else{
+                    sumList.insertBefore(item,sumList.lastElementChild);
+                }
             }       
         );
         downButton.addEventListener('click',()=>
@@ -68,7 +70,10 @@ addButton.addEventListener('click',(evt)=>
             }
                if (downButton.parentElement!=sumList.lastElementChild) {
                 sumList.insertBefore(item,sumList.childNodes[indexer+1].nextElementSibling );               
-               }            
+               } else
+               {
+                   sumList.insertBefore(item,sumList.firstElementChild);
+               }           
         });
         item.appendChild(delbutton);
         item.appendChild(upButton);
