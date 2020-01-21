@@ -36,6 +36,31 @@ height: 20px;
 }
 label
 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Calibri';
     font-size:  large;
+}
+#button-delete,#button-up,#button-down
+{
+    border-radius: 10px;
+    border-style: groove;
+    font-size:  large;
+    margin-left: 5px;
+    text-anchor: middle;
+    font-weight: bold;
+    padding-right: 15px;
+}
+#button-delete:active,#button-up:active,#button-down:active
+{
+    color: rgb(105, 95, 160);
+    box-shadow: 0px 0px 20px rgb(105, 95, 160);
+}
+#button-delete:hover,#button-up:hover,#button-down:hover
+{
+    color: coral;
+}
+#message
+{
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: crimson;
 }
